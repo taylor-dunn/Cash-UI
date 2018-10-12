@@ -1,0 +1,26 @@
+<div class = "hi">
+<p><b>Welcome to this survey! </b> </p>
+
+<p> This information is being collected for </p>
+  <p> grant funding purposes and will remain anonymous</p>
+    <p> and confidential. </p>
+
+<mat-radio-group class="example-radio-group" [(ngModel)] = "languageChoice">
+    <mat-radio-button class = "example-radio-button" *ngFor = "let language
+    of languages" [value] = "language">
+    {{language}}
+  </mat-radio-button>
+  <mat-radio-group>
+
+<div>
+
+  <div class = "beginSurvey">
+<button mat-stroked-button> Begin Survey </button>
+</div>
+
+
+
+
+
+    <!-- <div class = "example-selected-value"> Your language of choice is:
+      {{languageChoice}}</div> -->

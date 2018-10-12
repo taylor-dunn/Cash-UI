@@ -1,0 +1,17 @@
+
+<p> 1.) What is your tax site/location? </p>
+
+<mat-form-field>
+  <mat-select placeholder="Tax Site/Location">
+    <mat-option *ngFor = "let option of options" [value]
+    = "option.value">
+    {{option.viewValue}}
+  </mat-option>
+</mat-select>
+</mat-form-field>
+
+
+
+
+
+<p> What is the age of the filer? </p>

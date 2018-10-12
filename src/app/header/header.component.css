@@ -1,0 +1,44 @@
+.header {
+  /* overflow: hidden; */
+  background-color: #008db1;
+  height: 100px;
+  padding: 20px;
+  padding-bottom: 28px;
+  height: 20px 10px;
+
+}
+
+.hi {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  /* border-radius: 4px; */
+
+}
+
+.logo {
+  height: 90px;
+  width: 175px;
+
+}
+
+
+.text {
+  padding-top: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #008db1;
+  height: 100px;
+  padding: 20px;
+  margin-top: 80%;
+  padding-bottom: 28px;
+  height: 20px 10px;
+
+}
