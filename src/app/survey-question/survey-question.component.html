@@ -1,4 +1,4 @@
-
+<!--
 <p> 1.) What is your tax site/location? </p>
 
 <mat-form-field>
@@ -14,4 +14,203 @@
 
 
 
-<p> What is the age of the filer? </p>
+<p> What is the age of 'the' filer? </p> -->
+
+
+<!-- <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button> -->
+<div class = "stepper">
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <app-welcome-page></app-welcome-page>
+      <div class = "beginSurvey">
+        <button mat-stroked-button matStepperNext>Begin Survey</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <app-question-one></app-question-one>
+
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <!-- <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step> -->
+
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
+      <app-question-two></app-question-two>
+      <ng-template matStepLabel></ng-template>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="fourthFormGroup">
+    <form [formGroup]="fourthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <app-question-three></app-question-three>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="fifthFormGroup">
+    <form [formGroup]="fifthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <app-question-four></app-question-four>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="sixthFormGroup">
+    <form [formGroup]="sixthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="sixthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="seventhFormGroup">
+    <form [formGroup]="seventhFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="seventhCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="eighthFormGroup">
+    <form [formGroup]="eigthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="eigthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="ninthFormGroup">
+    <form [formGroup]="ninthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="ninthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="tenthFormGroup">
+    <form [formGroup]="tenthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="tenthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="eleventhFormGroup">
+    <form [formGroup]="eleventhFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="eleventhCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="twelthFormGroup">
+    <form [formGroup]="twelthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="twelthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="thirteenthFormGroup">
+    <form [formGroup]="thirteenthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="thirteenthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="fourteenthFormGroup">
+    <form [formGroup]="fourteenthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="fourteenthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="fifteenthFormGroup">
+    <form [formGroup]="fifteenthFormGroup">
+      <ng-template matStepLabel> </ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Address" formControlName="fifteenthCtrl" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-horizontal-stepper>
+</div>

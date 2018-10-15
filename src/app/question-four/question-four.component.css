@@ -1,0 +1,10 @@
+.dropdown {
+  font-size: 12px;
+  white-space: normal;
+  /* width: 400px !important; */
+}
+
+
+.mat-form-field {
+  width: 400px !important;
+}

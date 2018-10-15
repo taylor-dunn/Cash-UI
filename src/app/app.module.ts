@@ -11,9 +11,14 @@ import { SurveyQuestionComponent } from './survey-question/survey-question.compo
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSelectModule} from '@angular/material/select';
 import { RouterModule, Routes } from '@angular/router';
+import {MatStepperModule} from '@angular/material/stepper';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material';
+import { QuestionOneComponent } from './question-one/question-one.component';
+import { QuestionTwoComponent } from './question-two/question-two.component';
+import { QuestionThreeComponent } from './question-three/question-three.component';
+import { QuestionFourComponent } from './question-four/question-four.component';
 
 
 
@@ -22,7 +27,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     HeaderComponent,
     WelcomePageComponent,
-    SurveyQuestionComponent
+    SurveyQuestionComponent,
+    QuestionOneComponent,
+    QuestionTwoComponent,
+    QuestionThreeComponent,
+    QuestionFourComponent
 
   ],
   imports: [
@@ -32,7 +41,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatButtonModule,
     MatMenuModule,
     MatSelectModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatStepperModule,
+    ReactiveFormsModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

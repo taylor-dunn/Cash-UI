@@ -1,0 +1,15 @@
+<p> What are you currently using CAP DC for today? </p>
+
+<form>
+  <mat-form-field>
+    <div class="dropdown">
+    <mat-select placeholder="Choose one:" [(ngModel)]="selectedValue" name="reason">
+      <mat-option *ngFor="let reason of reasons" [value]="reason.viewValue">
+        {{reason.viewValue}}
+      </mat-option>
+    </mat-select>
+  </div>
+  </mat-form-field>
+
+  <p> Selected value: {{selectedValue}} </p>
+</form>
