@@ -3,10 +3,24 @@
 }
 .beginSurvey {
   margin-top: 50px;
-  margin-left: 43%;
+  margin-left: 11%;
 }
 
 .stepper {
   /* margin-top: 0px; */
-height: 100% !important;
+height: 300px !important;
+padding-bottom: 400px !important;
+font: 30px;
+}
+
+/* .questions {
+  margin-left: 50%;
+} */
+
+::ng-deep .mat-horizontal-stepper-header-container {
+  display: none !important;
+}
+
+::ng-deep mat-stepper-horizontal, mat-stepper-horizontal {
+  height: 500px;
 }

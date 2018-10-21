@@ -22,6 +22,7 @@
 </button> -->
 <div class = "stepper">
 <mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <div class = "questions">
   <mat-step [stepControl]="firstFormGroup">
     <form [formGroup]="firstFormGroup">
       <app-welcome-page></app-welcome-page>
@@ -30,6 +31,8 @@
       </div>
     </form>
   </mat-step>
+
+
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel> </ng-template>
@@ -212,5 +215,7 @@
       </div>
     </form>
   </mat-step>
+</div>
 </mat-horizontal-stepper>
+
 </div>

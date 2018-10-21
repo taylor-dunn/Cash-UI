@@ -17,6 +17,7 @@ h2, h3 {
 body {
   margin: 2em;
   background-color: #ebebeb;
+  overflow: hidden;
 }
 body, input[text], button {
   color: #888;
@@ -29,3 +30,10 @@ body, input[text], button {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.mat-stepper-horizontal {
+  height: 400px;
+  padding-left: 35%;
+  padding-top: 20px;
+
+}

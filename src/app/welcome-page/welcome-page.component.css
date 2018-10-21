@@ -1,8 +1,10 @@
 .hi {
   text-align: center;
   color: black;
-  padding-top: 30px;
-  font-size: 20px;
+  padding-top: 10px;
+  font-size: 18px;
+  margin-left: 3%;
+  padding-right: 60% !important;
 }
 
 .mat-radio-button {
@@ -11,14 +13,15 @@ margin-right: 10px;
 }
 
 
+
 /* .next {
   margin-top: 150px;
   margin-left: 50%;
 } */
 
-.mat-stroked-button {
+/* .mat-stroked-button {
   font-size: 20px;
 }
 .beginSurvey {
   margin-top: 30px;
-}
+} */
